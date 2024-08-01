@@ -1,5 +1,9 @@
 <?php
 
+if ( !defined( 'ABSPATH' ) ) {
+    die;
+} // Cannot access directly.
+
 if ( class_exists( 'CSF' ) ) {
 
     // Prefix
