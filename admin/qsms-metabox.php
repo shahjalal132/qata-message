@@ -49,9 +49,21 @@ if ( class_exists( 'CSF' ) ) {
                 'title'  => 'Parameters',
                 'fields' => array(
                     array(
-                        'id'    => 'qsms_param',
-                        'type'  => 'text',
-                        'title' => 'Param',
+                        'id'          => 'qsms_param_key',
+                        'type'        => 'text',
+                        'title'       => 'Param',
+                        'placeholder' => 'Parameter Key',
+                    ),
+                    array(
+                        'id'          => 'qsms_param_value',
+                        'type'        => 'select',
+                        'title'       => 'Parameter Value',
+                        'placeholder' => 'Select an Value',
+                        'options'     => array(
+                            'processing' => 'Processing',
+                            'hold'       => 'On Hold',
+                            'cancelled'  => 'Cancelled',
+                        ),
                     ),
 
                 ),
