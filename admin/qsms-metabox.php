@@ -51,7 +51,7 @@ if ( class_exists( 'CSF' ) ) {
                     array(
                         'id'          => 'qsms_param_key',
                         'type'        => 'text',
-                        'title'       => 'Param',
+                        'title'       => 'Parameter Key',
                         'placeholder' => 'Parameter Key',
                     ),
                     array(
