@@ -11,10 +11,10 @@ class Qata_SMS_Post_Type {
 
     public function qmessage_callback_function_name() {
         $labels = array(
-            'name'                  => _x( 'Qata Message', 'Post Type General Name', 'qata-message' ),
-            'singular_name'         => _x( 'Qata Message', 'Post Type Singular Name', 'qata-message' ),
-            'menu_name'             => __( 'Qata Message', 'qata-message' ),
-            'name_admin_bar'        => __( 'Qata Message', 'qata-message' ),
+            'name'                  => _x( 'KakaoTalk Bizmessage', 'Post Type General Name', 'qata-message' ),
+            'singular_name'         => _x( 'KakaoTalk Bizmessage', 'Post Type Singular Name', 'qata-message' ),
+            'menu_name'             => __( 'KakaoTalk Bizmessage', 'qata-message' ),
+            'name_admin_bar'        => __( 'KakaoTalk Bizmessage', 'qata-message' ),
             'archives'              => __( 'SMS Archives', 'qata-message' ),
             'attributes'            => __( 'SMS Attributes', 'qata-message' ),
             'parent_item_colon'     => __( 'Parent Message', 'qata-message' ),
@@ -40,8 +40,8 @@ class Qata_SMS_Post_Type {
             'filter_items_list'     => __( 'Filter Messages list', 'qata-message' ),
         );
         $args   = array(
-            'label'               => __( 'Qata Message', 'qata-message' ),
-            'description'         => __( 'Qata Messages', 'qata-message' ),
+            'label'               => __( 'KakaoTalk Bizmessage', 'qata-message' ),
+            'description'         => __( 'KakaoTalk Bizmessages', 'qata-message' ),
             'labels'              => $labels,
             'supports'            => array( 'title', 'editor' ),
             'hierarchical'        => false,
