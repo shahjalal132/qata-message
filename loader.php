@@ -9,4 +9,3 @@
 
  include_once QATA_MESSAGE_PLUGIN_PATH . '/admin/class-qata-message-post-type.php';
  include_once QATA_MESSAGE_PLUGIN_PATH . '/admin/qsms-metabox.php';
- include_once QATA_MESSAGE_PLUGIN_PATH . '/admin/metabox-demo.php';
