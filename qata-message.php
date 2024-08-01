@@ -26,7 +26,7 @@
  */
 
 // If this file is called directly, abort.
-if ( ! defined( 'WPINC' ) ) {
+if ( !defined( 'WPINC' ) ) {
 	die;
 }
 
@@ -36,6 +36,16 @@ if ( ! defined( 'WPINC' ) ) {
  * Rename this for your plugin and update it as you release new versions.
  */
 define( 'QATA_MESSAGE_VERSION', '1.0.0' );
+
+// Define plugin path
+if ( !defined( 'QATA_MESSAGE_PLUGIN_PATH' ) ) {
+	define( 'QATA_MESSAGE_PLUGIN_PATH', untrailingslashit( plugin_dir_path( __FILE__ ) ) );
+}
+
+// Define plugin url
+if ( !defined( 'QATA_MESSAGE_PLUGIN_URI' ) ) {
+	define( 'QATA_MESSAGE_PLUGIN_URI', untrailingslashit( plugin_dir_url( __FILE__ ) ) );
+}
 
 /**
  * The code that runs during plugin activation.
