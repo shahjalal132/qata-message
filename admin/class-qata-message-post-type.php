@@ -11,14 +11,14 @@ class Qata_SMS_Post_Type {
 
     public function qmessage_callback_function_name() {
         $labels = array(
-            'name'                  => _x( 'KakaoTalk Bizmessage', 'Post Type General Name', 'qata-message' ),
-            'singular_name'         => _x( 'KakaoTalk Bizmessage', 'Post Type Singular Name', 'qata-message' ),
-            'menu_name'             => __( 'KakaoTalk Bizmessage', 'qata-message' ),
-            'name_admin_bar'        => __( 'KakaoTalk Bizmessage', 'qata-message' ),
+            'name'                  => _x( 'Kakao SMS', 'Post Type General Name', 'qata-message' ),
+            'singular_name'         => _x( 'Kakao SMS', 'Post Type Singular Name', 'qata-message' ),
+            'menu_name'             => __( 'Kakao SMS', 'qata-message' ),
+            'name_admin_bar'        => __( 'Kakao SMS', 'qata-message' ),
             'archives'              => __( 'SMS Archives', 'qata-message' ),
             'attributes'            => __( 'SMS Attributes', 'qata-message' ),
             'parent_item_colon'     => __( 'Parent Message', 'qata-message' ),
-            'all_items'             => __( 'All Messages', 'qata-message' ),
+            'all_items'             => __( 'Kakao SMS', 'qata-message' ),
             'add_new_item'          => __( 'Add New Message', 'qata-message' ),
             'add_new'               => __( 'Add New', 'qata-message' ),
             'new_item'              => __( 'New Message', 'qata-message' ),
@@ -40,14 +40,14 @@ class Qata_SMS_Post_Type {
             'filter_items_list'     => __( 'Filter Messages list', 'qata-message' ),
         );
         $args   = array(
-            'label'               => __( 'KakaoTalk Bizmessage', 'qata-message' ),
-            'description'         => __( 'KakaoTalk Bizmessages', 'qata-message' ),
+            'label'               => __( 'Kakao SMS', 'qata-message' ),
+            'description'         => __( 'Kakao SMSs', 'qata-message' ),
             'labels'              => $labels,
             'supports'            => array( 'title', 'editor' ),
             'hierarchical'        => false,
             'public'              => true,
             'show_ui'             => true,
-            'show_in_menu'        => true,
+            'show_in_menu'        => 'woocommerce',
             'menu_position'       => 50,
             'menu_icon'           => 'dashicons-email',
             'show_in_admin_bar'   => true,
@@ -59,7 +59,6 @@ class Qata_SMS_Post_Type {
             'capability_type'     => 'page',
         );
         register_post_type( 'qata_message', $args );
-
     }
 }
 
