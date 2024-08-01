@@ -74,6 +74,9 @@ register_deactivation_hook( __FILE__, 'deactivate_qata_message' );
  */
 require plugin_dir_path( __FILE__ ) . 'includes/class-qata-message.php';
 
+// Require loader.php file
+require_once QATA_MESSAGE_PLUGIN_PATH . '/loader.php';
+
 /**
  * Begins execution of the plugin.
  *
