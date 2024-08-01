@@ -13,16 +13,27 @@ class Create_Update_Order {
     public function create_order( $order_id ) {
         // Create Order
         $create_order = $this->call_api( $order_id, 'Create Order' );
+        // Put the api response to log file.
         $this->put_api_response_data( 'Create Order ' . $create_order );
     }
 
     public function changed_order( $order_id, $old_status, $new_status, $order ) {
+
+        /**
+         * Calls the API based on the current status.
+         * For example: If the status is 'hold', retrieves the 'on-hold' custom post type message and calls the API.
+         * Similar logic applies to other status values.
+         */
+
         // Change order status
         $change_order_status = $this->call_api( $order_id, 'Change Order Status' );
+        // Put the api response to log file.
         $this->put_api_response_data( 'Change Order Status ' . $change_order_status );
     }
 
     public function call_api( $order_id, $action ) {
+
+        // Get the order
         $order = wc_get_order( $order_id );
 
         $recipient_no  = $order->get_billing_phone();

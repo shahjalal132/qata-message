@@ -68,7 +68,7 @@ if ( class_exists( 'CSF' ) ) {
                         'type'        => 'select',
                         'title'       => 'Parameter Value',
                         'placeholder' => 'Select a Value',
-                        'options'     => $status_options,
+                        'options'     => $status_options, // Replace with an order infos like price, phone, addresses etc etc.
                     ),
                 ),
             ),
